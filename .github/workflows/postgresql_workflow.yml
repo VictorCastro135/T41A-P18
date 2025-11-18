@@ -44,11 +44,11 @@ jobs:
 
     - name: Execute 01_ejercicio_propuesto.sql
       run: |
-        PGPASSWORD=postgres psql -h localhost -U postgres -d test_db -f tests/01_ejercicio_propuesto.sql
+        PGPASSWORD=postgres psql -h localhost -U postgres -d test_db -f 01_ejercicio_propuesto.sql
         
     - name: Execute 02_ejercicios_recomendados.sql
       run: |
-        PGPASSWORD=postgres psql -h localhost -U postgres -d test_db -f tests/02_ejercicios_recomendados.sql
+        PGPASSWORD=postgres psql -h localhost -U postgres -d test_db -f 02_ejercicios_recomendados.sql
         
     - name: Run unit tests
       run: |
